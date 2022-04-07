@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "nohoist": [
+    "**/@types/jest",
+    "**/@types/jest/**"
+  ],
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.20.0",
+    "@graphql-codegen/typescript": "1.20.0",
+    "@graphql-codegen/typescript-operations": "1.17.13",
+    "@graphql-codegen/typescript-react-apollo": "2.2.1"
+  },
+  "scripts": {
+    "gql:gen-types": "graphql-codegen --config codegen.yml"
+  }
+}
